@@ -3,8 +3,8 @@ parameters:
     bin_dir: vendor/bin
     tasks: null
     ascii:
-            failed: ~
-            succeeded: ~
+      failed: ~
+      succeeded: ~
     phpcs:
       standard: "PSR2"
       warning_severity: "100"
