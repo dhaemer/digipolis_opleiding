@@ -2,20 +2,23 @@
 
 namespace Quote;
 
-class Donald {
-  protected $path = "https://api.whatdoestrumpthink.com/api/v1/quotes/";
+class Donald
+{
+    protected $path = "https://api.whatdoestrumpthink.com/api/v1/quotes/";
 
-  function random() {
-    $url = $this->path . "random";
+    public function random()
+    {
+        $url = $this->path . "random";
 
-    $output = json_decode(file_get_contents($url));
+        $output = json_decode(file_get_contents($url));
 
-    return $output->message;
-  }
+        return $output->message;
+    }
 
-  function all() {
-    $output = json_decode(file_get_contents($this->path));
+    public function all()
+    {
+        $output = json_decode(file_get_contents($this->path));
 
-    return $output;
-  }
+        return $output;
+    }
 }
