@@ -2,3 +2,13 @@ parameters:
     git_dir: .
     bin_dir: vendor/bin
     tasks: null
+    ascii:
+            failed: ~
+            succeeded: ~
+    phpcs:
+      standard: "PSR2"
+      warning_severity: "100"
+    git_blacklist:
+      keywords:
+        - "die("
+        - "var_dump("
