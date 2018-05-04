@@ -6,7 +6,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Test\\Quote\\": "tests/"
+            "Quote\\": "src/"
         }
     },
     "require-dev": {
